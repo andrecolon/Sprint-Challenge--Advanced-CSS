@@ -1,0 +1,24 @@
+// Mixins Here
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@mixin spacelinks($f-size,
+$f-weight,
+$f-padding,
+$txt-line) {
+    font-size: $f-size;
+    font-weight: $f-weight;
+    padding: $f-padding;
+    text-decoration: $txt-line;
+}
+
+@mixin spacebox($rad,
+$shadow,
+$bor,
+$flx-grw) {
+    border-radius: $rad;
+    -ms-border-radius: $rad;
+    -moz-border-radius: $rad;
+    -webkit-border-radius: $rad;
+    box-shadow: $shadow;
+    border: $bor;
+    flex-grow: $flx-grw;
+}
