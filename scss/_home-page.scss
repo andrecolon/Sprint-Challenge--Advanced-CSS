@@ -7,6 +7,11 @@
         p {
             padding: 0 15px;
         }
+        @media screen and (max-width: $phone) {
+            .header-img {
+                max-width: 100%;
+            }
+        }
     }
     .space-images {
         display: flex;
@@ -17,6 +22,16 @@
             margin: 20px 2.5%;
             border-radius: 20px;
             height: 100%;
+        }
+        @media screen and (max-width: $phone) {
+            img {
+                width: 90%;
+                margin: 20px auto;
+            }
+            .sky,
+            .launch {
+                display: none;
+            }
         }
     }
     .visit-planets {
@@ -34,17 +49,20 @@
         padding: 50px 60px;
         display: flex;
         justify-content: center;
+        order: 1;
         .walk-text {
             width: 50%;
             h3 {
                 margin-bottom: 10px;
             }
-            p {
-                margin-bottom: 26px;
-            }
             .btn {
-                @include spacebox(10px, 0px 14px 21px -10px rgba(84, 84, 84, 0.24), 1px solid #444, 1);
+                @include spacebox(10px, 0px 14px 21px -10px rgba(84, 84, 84, 0.24), 1px solid #444, 0);
                 @include spacelinks(1.5em, 900, 10px 50px, none);
+                text-align: center;
+                color: $porcelain;
+                background-color: $btn-bg-color;
+                margin-top: 20px;
+                width: 50%;
             }
         }
         .walk-img {
@@ -54,6 +72,29 @@
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
+            }
+        }
+        @media screen and (max-width: $phone) {
+            flex-direction: column;
+            margin-top: 20px;
+            border-top: 1px solid $main-border-color;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            .walk-text,
+            .walk-img {
+                width: 100%;
+                margin: 20px auto;
+            }
+            .walk-text {
+                order: 2
+            }
+            .walk-text .btn {
+                @include spacebox(0px, 0px 14px 21px -10px rgba(84, 84, 84, 0.24), 1px solid #444, 0);
+                width: 100%;
+            }
+            .walk-img {
+                order: 1
             }
         }
     }

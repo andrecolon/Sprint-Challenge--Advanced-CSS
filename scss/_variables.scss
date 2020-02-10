@@ -1,4 +1,5 @@
 // Variables
+$desktop-vp: 800px;
 $phone: 500px;
 // Color pointers
 $nav-bg: #F6F6F6;
@@ -11,6 +12,8 @@ $footer-background: #F6F6F6;
 $footer-font-color: #81848E;
 $porcelain: #F6F7F8;
 $btn-bg-color: #22283A;
+// Font sizes and weights map & key
+$f-size: ( "sm": 1.2em, "md": 1.6em, "lg": 2em, "logotxt": 3em);
 // Color Vars
 // $wild-sand: #F6F6F6;
 // $river-bend: #454A59;
