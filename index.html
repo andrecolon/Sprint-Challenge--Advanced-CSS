@@ -9,6 +9,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
     <link href="scss/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -63,11 +65,12 @@
 
                 <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
 
-                <a href="#modal">
+                <a href="#show-hide">
                     <div class="btn">
                         <p> Sign Up</p>
                     </div>
                 </a>
+
             </div>
 
             <div class="walk-img">
@@ -75,7 +78,23 @@
             </div>
 
         </section>
-
+        <div class="login-page">
+            <div class="form">
+                <form class="register-form">
+                    <input type="text" placeholder="name" />
+                    <input type="password" placeholder="password" />
+                    <input type="text" placeholder="email address" />
+                    <button>create</button>
+                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                </form>
+                <form class="login-form">
+                    <input type="text" placeholder="username" />
+                    <input type="email" placeholder="email" />
+                    <button>Subscribe</button>
+                    <p class="message">Not registered? <a href="#">Create an account</a></p>
+                </form>
+            </div>
+        </div>
         <footer>
             <p>Copyright SpaceWalkers 2018</p>
         </footer>
